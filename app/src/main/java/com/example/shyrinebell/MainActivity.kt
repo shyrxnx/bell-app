@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.example.shyrinebell.ui.theme.ShyrineBellTheme
 
 class MainActivity : ComponentActivity() {
@@ -38,4 +39,12 @@ fun BellImage(modifier: Modifier = Modifier) {
         contentDescription = "Bell Image",
         modifier = Modifier
     )
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BellImagePreview() {
+    ShyrineBellTheme {
+        BellImage()
+    }
 }
